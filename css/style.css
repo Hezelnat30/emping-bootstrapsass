@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color:#FFFAE1;
+}
+
+.jumbotron{
+    padding-top: 9rem;
+    background-color: #9E7846;
+    border: none;
+    z-index: -5;
+}
+
+.jumbotron img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+#home {
+    padding-top: 5rem;
+    margin-top: -1px;
+}
+
+#about {
+    padding-top: 5rem;
+    margin-top: 40px;
+}
+
+#contact {
+    padding: 4rem;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#product {
+    padding: 6rem 0;
+    margin-top: 40px;
+}
+
+ul {
+    width: 80%;
+}
+
+.active {
+    background:#f3f5f8;
+    color: #7B1113;
+    border-radius: .25rem;
+}
+
+.navbar-scroll {
+    position: fixed !important;
+    z-index: 99;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    opacity: 50%;
+    transition: all .2 ease-in-out;
+}
+
+.container {
+    padding: 20px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.img-fluid {
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 64px;
+    right: 64px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.main-content {
+    width: 50%;
+}
+
+.main-content p{
+    text-align: justify;
+}
+
+.img-fluid img {
+    width: 80%;
+    object-fit: cover;
+    box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.3);
+}
+
+.font-great {
+    font-family: "Great Vibes", cursive;
+}
+
+.tracking {
+    letter-spacing: 1.2px;
+}
+
+.nav-link:hover {
+    color: #f5e588;
+}
+
+.bg-coklat {
+    background-color: #6E4826;
+}
+
+.bg-coklat-muda {
+    background-color: #9E7846;
+}
+
+.bg-tan {
+    background-color: #ede0c4;
+}
+
+.btn:hover {
+    background-color: #836347;
+    color: #F5F5DC;
+    transform: scale(.97);
+}
+
+.transition {
+    transition: all 0.2s ease-in-out;
+}
+
+#product h1 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.accordion {
+    max-width: 1080px;
+    height: 300px;
+    display: flex;
+    gap:5px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.item {
+    position: relative;
+    width: 25%;
+    cursor: pointer;
+    transition: width .5s ease;
+    overflow: hidden;
+}
+
+.item img {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity .2s ease,
+                .3s transform .2s ease;
+
+}
+
+.overlay{
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: #f3f5f8;
+    transition: all .3s ease .2s;
+  }
+  
+.overlay h2{
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-overflow:clip;
+    font-size:1.8em;
+    text-transform:uppercase;
+}
+  
+.overlay p{
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.item:hover {
+    width: 75%;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+    opacity: .7;
+    filter: blur(10%);
+} 
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.testimoni {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+}
+
+.testimoni .city {
+    color: #f3f5f8;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: .9em;
+    font-style: italic;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    padding-top: 10px;
+}
+
+.contact-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.contact-title p {
+    font-size: .9em;
+    font-style: italic;
+}
+
+.form-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-content button {
+    margin: 0 auto;
+    text-align: center;
+    color: #F5F5DC;
+}
+
+.footer-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 728px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.iconsocial a{
+    color: #6E4826;
+    height: 40px;
+    width: 40px;
+    margin: 3px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+.iconsocial a:hover {
+    color: white;
+    background-color: #6E4826;
+}
+
+.checkout {
+    max-width: 1024px;
+}
+
+.checkout h4{
+    text-align: center;
+}
+
+#footer p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none !important;
+    }
+
+    nav .btn-checkout {
+        display: none !important;
+    }
+    .main-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        padding-top: 10px;
+    }
+
+    #home {
+        padding-top: 0;
+    }
+
+    #product {
+        display: none;
+    }
+
+    .img-fluid {
+        width: 100%;
+    }
+
+    .img-fluid img {
+        width: 100%;
+    }
+
+    .img-overlay {
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    ul {
+        width: 40%;
+    }
+    .main-content h2 {
+        font-size: 3em !important;
+    }
+
+    .main-content p {
+        font-size: 1.2em !important;
+    }
+    
+    .img-fluid img {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .form-content {
+        width: 60%;
+    }
+}
